@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #000;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .create-folder-modal-conatiner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        border-radius: 10px;
+        color: white;
+        background-color: rgb(114, 114, 114);
+    }
+
+    .create-folder-modal-conatiner .top {
+        display: flex;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(102, 102, 102);
+        width: 100%;
+    }
+
+    .create-folder-modal-conatiner .top button {
+        padding: 10px;
+        border-radius: 4px;
+        background-color:  rgb(128, 128, 128);
+        color: #fff;
+        font-size: 14px;
+        box-shadow: none;
+        border: 0;
+    }
+    .create-folder-modal-conatiner .top button:hover {
+        background-color:  rgb(70, 70, 70);
+    }
+
+    .create-folder-modal-conatiner .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .create-folder-modal-conatiner .bottom input {
+        padding: 10px;
+        width: 90%;
+        border-radius: 4px;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 14px;
+        outline: none;
+        transition: border 0.2s ease;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.05);
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    <div class="create-folder-modal-background-overlay">
+        <div class="create-folder-modal-conatiner">
+            <div class="top">
+                <button>Cancel</button>
+                <p>New Folder</p>
+                <button>Create</button>
+            </div>
+            <div class="bottom">
+                <p>Folder name</p>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
